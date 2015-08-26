@@ -37,6 +37,11 @@ namespace WhitespaceAnalyzers
 
         private static void AnalyzeSyntaxTree(SyntaxTreeAnalysisContext context)
         {
+            if (context.Tree.IsGenerated())
+            {
+                return;
+            }
+
             var leadingTrivia = context.Tree.GetRoot().GetLeadingTrivia();
 
             if (!leadingTrivia.Any(x => x.IsKind(SyntaxKind.WhitespaceTrivia) || x.IsKind(SyntaxKind.EndOfLineTrivia)))

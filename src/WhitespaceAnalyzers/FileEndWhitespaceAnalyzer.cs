@@ -36,6 +36,11 @@ namespace WhitespaceAnalyzers
 
         private static void AnalyzeSyntaxTree(SyntaxTreeAnalysisContext context)
         {
+            if (context.Tree.IsGenerated())
+            {
+                return;
+            }
+
             var lastToken = context.Tree.GetRoot().GetLastToken();
             var trailingTrivia = lastToken.TrailingTrivia;
 
