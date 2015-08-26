@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WhitespaceAnalyzers</id>
+    <version>$version$</version>
+    <title>WhitespaceAnalyzers</title>
+    <authors>Iain Galloway</authors>
+    <owners>Iain Galloway</owners>
+    <licenseUrl>https://github.com/iaingalloway/WhitespaceAnalyzers/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/iaingalloway/WhitespaceAnalyzers</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic Roslyn analyzers to enforce that files do not start with whitespace, and end with a newline.</description>
+    <summary>Basic Roslyn analyzers to enforce that files do not start with whitespace, and end with a newline.</summary>
+    <copyright>Licensed under CC0 1.0 Universal</copyright>
+    <tags>analyzers, whitespace</tags>
+  </metadata>
+  <files>
+    <file src="*.dll" target="analyzers\dotnet\cs" exclude="**\Microsoft.CodeAnalysis.*;**\System.Collections.Immutable.*;**\System.Reflection.Metadata.*;**\System.Composition.*" />
+    <file src="tools\*.ps1" target="tools\" />
+  </files>
+</package>
