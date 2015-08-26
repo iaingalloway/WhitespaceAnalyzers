@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="WhitespaceAnalyzers.Vsix..f6efa9d5-2e24-41d0-b24d-28c59b4a5bcb" Version="1.0" Language="en-US" Publisher="Iain Gall0way"/>
     <DisplayName>WhitespaceAnalyzers.Vsix</DisplayName>
-    <Description xml:space="preserve">This is a sample diagnostic extension for the .NET Compiler Platform ("Roslyn").</Description>
+    <Description xml:space="preserve">Basic Roslyn analyzers to enforce that files do not start with whitespace, and end with a newline.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Pro" />
